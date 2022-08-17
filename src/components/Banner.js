@@ -24,7 +24,7 @@ export const Banner = () => {
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
-    let updatetext = isDealing
+    let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
@@ -34,7 +34,7 @@ export const Banner = () => {
       setDelta((prevDelta) => prevDelta / 2);
     }
 
-    if (!isDeleting && updatedtext === fullText) {
+    if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
