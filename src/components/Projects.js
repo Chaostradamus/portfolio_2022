@@ -46,6 +46,9 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
+          <div>
+            
+          </div>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
