@@ -1,8 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import exercise from "../assets/img/exercise.png";
+import reddit from "../assets/img/reddit.png";
+import googletranslate from "../assets/img/googletranslate.png";
+import snapchat from "../assets/img/snapchat.png";
+import amazon from "../assets/img/amazon.png";
+import airbnb from "../assets/img/airbnb.png";
+import hulu from "../assets/img/hulu.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -10,45 +14,57 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
+      title: "Gym App",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: exercise,
+      site: "https://gym-app-puce.vercel.app/",
     },
     {
-      title: "Business Startup",
+      title: "Reddit",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: reddit,
+      site: "https://reddit2-eight.vercel.app/",
     },
     {
-      title: "Business Startup",
+      title: "Google Translate",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: googletranslate,
+      site: "https://google-translate-clone-seven.vercel.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Hulu",
+      description: "UI",
+      imgUrl: hulu,
+      site: "https://hulu-clone-one-jade.vercel.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Air BNB",
+      description: "UI",
+      imgUrl: airbnb,
+      site: "https://airbnb-clone-olive-ten.vercel.app/",
     },
     {
-      title: "Business Startup",
+      title: "Snapchat",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: snapchat,
+      site: "https://snapchat-clone-982a1.web.app/",
+    },
+  ];
+
+  const projects2020 = [
+    {
+      title: "Amazon",
+      description: "Design & Development",
+      imgUrl: amazon,
+      site: "https://clone-e3a68.web.app/",
     },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
-          <div>
-            
-          </div>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -58,11 +74,7 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Projects that I have been working on throughout the years...
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -71,13 +83,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">2022</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">2021</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">2020</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -93,22 +105,25 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {projects2020.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      
+
                       <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <p>hellooo</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          {/* Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem
                           explicabo excepturi id illo molestiae blanditiis,
                           eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          inventore debitis quo. */}
                         </p>
                       </Tab.Pane>
                     </Tab.Content>
