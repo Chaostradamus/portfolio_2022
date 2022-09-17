@@ -8,7 +8,9 @@ import amazon from "../assets/img/amazon.png";
 import airbnb from "../assets/img/airbnb.png";
 import hulu from "../assets/img/hulu.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import chat from '../assets/img/chat.jpg'
+import chat from "../assets/img/chat.jpg";
+import crypto from "../assets/img/crypto.png";
+import blog from "../assets/img/blog.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -60,11 +62,25 @@ export const Projects = () => {
       site: "https://clone-e3a68.web.app/",
     },
     {
-     
       title: "Snapchat",
       description: "Design & Development",
       imgUrl: snapchat,
       site: "https://snapchat-clone-982a1.web.app/",
+    },
+  ];
+
+  const upcoming = [
+    {
+      title: "CrptoTracker",
+      description: "Crypto price tracker app",
+      imgUrl: crypto,
+      // site: "https://snapchat-clone-982a1.web.app/",
+    },
+    {
+      title: "Blog Site",
+      description: "simple blog post site",
+      imgUrl: blog,
+      // site: "https://snapchat-clone-982a1.web.app/",
     },
   ];
 
@@ -96,9 +112,9 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="second">2021</Nav.Link>
                       </Nav.Item>
-                      {/* <Nav.Item>
-                        <Nav.Link eventKey="third">upcoming</Nav.Link>
-                      </Nav.Item> */}
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Upcoming</Nav.Link>
+                      </Nav.Item>
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
@@ -120,7 +136,13 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      
+                      <Tab.Pane eventKey="third">
+                        <Row>
+                          {upcoming.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
 
                       <Tab.Pane eventKey="section">
                         <p>hellooo</p>
