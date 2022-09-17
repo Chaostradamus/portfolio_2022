@@ -8,6 +8,7 @@ import amazon from "../assets/img/amazon.png";
 import airbnb from "../assets/img/airbnb.png";
 import hulu from "../assets/img/hulu.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import chat from '../assets/img/chat.jpg'
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -44,10 +45,10 @@ export const Projects = () => {
       site: "https://airbnb-clone-olive-ten.vercel.app/",
     },
     {
-      title: "Snapchat",
+      title: "Basic Chat App",
       description: "Design & Development",
-      imgUrl: snapchat,
-      site: "https://snapchat-clone-982a1.web.app/",
+      imgUrl: chat,
+      site: "https://chatapp2022-qev6svoln-chaostradamus.vercel.app/login",
     },
   ];
 
@@ -57,6 +58,13 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: amazon,
       site: "https://clone-e3a68.web.app/",
+    },
+    {
+     
+      title: "Snapchat",
+      description: "Design & Development",
+      imgUrl: snapchat,
+      site: "https://snapchat-clone-982a1.web.app/",
     },
   ];
 
@@ -88,9 +96,9 @@ export const Projects = () => {
                       <Nav.Item>
                         <Nav.Link eventKey="second">2021</Nav.Link>
                       </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">2020</Nav.Link>
-                      </Nav.Item>
+                      {/* <Nav.Item>
+                        <Nav.Link eventKey="third">upcoming</Nav.Link>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
