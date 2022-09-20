@@ -41,11 +41,12 @@ export const Projects = () => {
       site: "https://hulu-clone-one-jade.vercel.app/",
     },
     {
-      title: "Air BNB",
-      description: "UI",
-      imgUrl: airbnb,
-      site: "https://airbnb-clone-olive-ten.vercel.app/",
+      title: "CryptoTracker",
+      description: "Crypto price tracker app",
+      imgUrl: crypto,
+      site: "https://crypto-app-chaostradamus.vercel.app/",
     },
+
     {
       title: "Basic Chat App",
       description: "Design & Development",
@@ -67,15 +68,15 @@ export const Projects = () => {
       imgUrl: snapchat,
       site: "https://snapchat-clone-982a1.web.app/",
     },
+    {
+      title: "Air BNB",
+      description: "UI",
+      imgUrl: airbnb,
+      site: "https://airbnb-clone-olive-ten.vercel.app/",
+    },
   ];
 
   const upcoming = [
-    {
-      title: "CrptoTracker",
-      description: "Crypto price tracker app",
-      imgUrl: crypto,
-      // site: "https://snapchat-clone-982a1.web.app/",
-    },
     {
       title: "Blog Site",
       description: "simple blog post site",
