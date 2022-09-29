@@ -13,6 +13,7 @@ import crypto from "../assets/img/crypto.png";
 import blog from "../assets/img/blog.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import google from '../assets/img/google.png'
 
 export const Projects = () => {
   const projects = [
@@ -74,6 +75,13 @@ export const Projects = () => {
       imgUrl: airbnb,
       site: "https://airbnb-clone-olive-ten.vercel.app/",
     },
+    {
+      title: "Google Search Clone",
+      description: "Api Call Design",
+      imgUrl: google,
+      site: "https://google-search-clone-jws4.vercel.app/search",
+    },
+
   ];
 
   const upcoming = [
