@@ -116,10 +116,10 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">2022</Nav.Link>
+                        <Nav.Link eventKey="first">2025</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">2021</Nav.Link>
+                        <Nav.Link eventKey="second">2024</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Upcoming</Nav.Link>
