@@ -11,16 +11,17 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import chat from "../assets/img/chat.jpg";
 import crypto from "../assets/img/crypto.png";
 import blog from "../assets/img/blog.png";
+import detroit from "../assets/img/detroit.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import google from '../assets/img/google.png'
+import google from "../assets/img/google.png";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Gym App",
-      description: "Design & Development",
-      imgUrl: exercise,
+      title: "NFL Fantasy Stats",
+      description: "Full Stack node express, postgres, and sportsradar API ",
+      imgUrl: detroit,
       site: "https://gym-app-puce.vercel.app/",
     },
     {
@@ -81,7 +82,12 @@ export const Projects = () => {
       imgUrl: google,
       site: "https://google-search-clone-jws4.vercel.app/search",
     },
-
+    {
+      title: "Gym App",
+      description: "Design & Development",
+      imgUrl: exercise,
+      site: "https://gym-app-puce.vercel.app/",
+    },
   ];
 
   const upcoming = [
