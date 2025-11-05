@@ -22,7 +22,7 @@ export const Projects = () => {
       title: "NFL Fantasy Stats",
       description: "Full Stack node express, postgres, and sportsradar API ",
       imgUrl: detroit,
-      site: "https://gym-app-puce.vercel.app/",
+      site: "https://chaoseye-frontend.onrender.com/",
     },
     {
       title: "Reddit",
